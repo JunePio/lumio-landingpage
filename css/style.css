@@ -813,6 +813,50 @@ img {
   line-height: 1.8;
 }
 
+.legal-links {
+  margin-top: 14px;
+  font-size: 0.85rem;
+}
+
+.legal-links a {
+  color: var(--accent-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-links a:hover {
+  color: var(--accent);
+}
+
+.legal-links span {
+  margin: 0 8px;
+  color: var(--text-dim);
+}
+
+.pricing-note-detail a {
+  color: var(--accent-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pricing-note-detail a:hover {
+  color: var(--accent);
+}
+
+.footer-legal a {
+  color: var(--text-dim);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-legal a:hover {
+  color: var(--accent-light);
+}
+
+.footer-legal span {
+  margin: 0 6px;
+}
+
 /* Pricing */
 .pricing-grid {
   display: grid;
@@ -1182,7 +1226,8 @@ img {
   margin: 16px 0 24px;
 }
 
-.privacy-content ul {
+.privacy-content ul,
+.privacy-content ol {
   margin: 12px 0 16px 20px;
   font-size: 0.92rem;
   color: var(--text-muted);
