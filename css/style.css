@@ -143,7 +143,34 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   height: 100%;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.lang-switcher--header {
+  flex-shrink: 0;
+}
+
+.lang-switcher--header .lang-switcher-label {
+  display: none;
+}
+
+.lang-switcher--header a {
+  min-width: 36px;
+  padding: 5px 8px;
+  font-size: 0.75rem;
+}
+
+.lang-switcher--mobile {
+  margin: 8px 0 20px;
+  width: fit-content;
 }
 
 .logo {
@@ -1155,18 +1182,71 @@ img {
   padding: calc(var(--header-h) + 48px) 0 80px;
 }
 
+.privacy-page-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
 .privacy-page .back-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-size: 0.9rem;
   font-weight: 500;
-  margin-bottom: 32px;
   color: var(--text-muted);
 }
 
 .privacy-page .back-link:hover {
   color: var(--accent-light);
+}
+
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+}
+
+.lang-switcher-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 0 8px 0 10px;
+  white-space: nowrap;
+}
+
+.lang-switcher a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.lang-switcher a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.lang-switcher a.is-active {
+  color: var(--bg, #0b0f14);
+  background: var(--accent-light);
+  pointer-events: none;
 }
 
 .privacy-header {
@@ -1285,6 +1365,12 @@ img {
 
   .nav-toggle {
     display: flex;
+  }
+
+  .lang-switcher--header a {
+    min-width: 32px;
+    padding: 4px 7px;
+    font-size: 0.72rem;
   }
 
   .hero {

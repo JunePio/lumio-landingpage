@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="루미오(Lumio) 이용약관 — iOS 앱 루미오 및 연결된 서버 서비스 이용 조건을 안내합니다.">
   <title>이용약관 — 루미오 Lumio</title>
+  <link rel="alternate" hreflang="ko" href="terms.html">
+  <link rel="alternate" hreflang="en" href="terms-en.html">
+  <link rel="alternate" hreflang="ja" href="terms-ja.html">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,41 +20,62 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" data-i18n-page="home">
         <span class="logo-icon">✦</span>
         <span class="logo-text">루미오</span>
       </a>
       <nav class="nav-desktop" aria-label="주요 메뉴">
         <ol class="nav-links">
-          <li><a href="index.html#about"><span class="nav-num">01.</span> 이야기</a></li>
-          <li><a href="index.html#features"><span class="nav-num">02.</span> 경험</a></li>
-          <li><a href="index.html#pricing"><span class="nav-num">03.</span> 크레딧</a></li>
-          <li><a href="index.html#platform"><span class="nav-num">04.</span> 함께하는 곳</a></li>
-          <li><a href="terms.html">이용약관</a></li>
-          <li><a href="privacy.html">개인정보</a></li>
+          <li><a href="index.html#about" data-i18n-page="home" data-i18n-hash="about"><span class="nav-num">01.</span> 이야기</a></li>
+          <li><a href="index.html#features" data-i18n-page="home" data-i18n-hash="features"><span class="nav-num">02.</span> 경험</a></li>
+          <li><a href="index.html#pricing" data-i18n-page="home" data-i18n-hash="pricing"><span class="nav-num">03.</span> 크레딧</a></li>
+          <li><a href="index.html#platform" data-i18n-page="home" data-i18n-hash="platform"><span class="nav-num">04.</span> 함께하는 곳</a></li>
+          <li><a href="terms.html" data-i18n-page="terms">이용약관</a></li>
+          <li><a href="privacy.html" data-i18n-page="privacy">개인정보</a></li>
         </ol>
       </nav>
-      <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-actions">
+        <nav class="lang-switcher lang-switcher--header" data-lang-switcher data-page="terms" data-current-lang="ko" aria-label="언어 선택">
+          <a href="terms.html" data-lang="ko" class="is-active" hreflang="ko" aria-current="page">KO</a>
+          <a href="terms-en.html" data-lang="en" hreflang="en">EN</a>
+          <a href="terms-ja.html" data-lang="ja" hreflang="ja">JA</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="메뉴 열기" data-label-open="메뉴 열기" data-label-close="메뉴 닫기" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
     <nav class="nav-mobile" id="mobile-nav" aria-label="모바일 메뉴" hidden>
+      <nav class="lang-switcher lang-switcher--mobile" data-lang-switcher data-page="terms" data-current-lang="ko" aria-label="언어 선택">
+        <span class="lang-switcher-label">Language</span>
+        <a href="terms.html" data-lang="ko" class="is-active" hreflang="ko" aria-current="page">한국어</a>
+        <a href="terms-en.html" data-lang="en" hreflang="en">English</a>
+        <a href="terms-ja.html" data-lang="ja" hreflang="ja">日本語</a>
+      </nav>
       <ol class="nav-mobile-links">
-        <li><a href="index.html#about"><span class="nav-num">01.</span> 이야기</a></li>
-        <li><a href="index.html#features"><span class="nav-num">02.</span> 경험</a></li>
-        <li><a href="index.html#pricing"><span class="nav-num">03.</span> 크레딧</a></li>
-        <li><a href="index.html#platform"><span class="nav-num">04.</span> 함께하는 곳</a></li>
-        <li><a href="terms.html">이용약관</a></li>
-        <li><a href="privacy.html">개인정보처리방침</a></li>
+        <li><a href="index.html#about" data-i18n-page="home" data-i18n-hash="about"><span class="nav-num">01.</span> 이야기</a></li>
+        <li><a href="index.html#features" data-i18n-page="home" data-i18n-hash="features"><span class="nav-num">02.</span> 경험</a></li>
+        <li><a href="index.html#pricing" data-i18n-page="home" data-i18n-hash="pricing"><span class="nav-num">03.</span> 크레딧</a></li>
+        <li><a href="index.html#platform" data-i18n-page="home" data-i18n-hash="platform"><span class="nav-num">04.</span> 함께하는 곳</a></li>
+        <li><a href="terms.html" data-i18n-page="terms">이용약관</a></li>
+        <li><a href="privacy.html" data-i18n-page="privacy">개인정보처리방침</a></li>
       </ol>
     </nav>
   </header>
 
   <main class="privacy-page">
     <div class="container">
-      <a href="index.html" class="back-link">← 루미오 홈으로</a>
+      <div class="privacy-page-toolbar">
+        <a href="index.html" class="back-link" data-i18n-page="home">← 루미오 홈으로</a>
+        <nav class="lang-switcher" data-lang-switcher data-page="terms" data-current-lang="ko" aria-label="언어 선택">
+          <span class="lang-switcher-label">Language</span>
+          <a href="terms.html" data-lang="ko" class="is-active" hreflang="ko" aria-current="page">한국어</a>
+          <a href="terms-en.html" data-lang="en" hreflang="en">English</a>
+          <a href="terms-ja.html" data-lang="ja" hreflang="ja">日本語</a>
+        </nav>
+      </div>
 
       <div class="privacy-header">
         <h1>루미오(Lumio) 이용약관</h1>
@@ -183,7 +207,7 @@
         <ol>
           <li>서비스에 관한 저작권·상표권 등 지식재산권은 회사 또는 정당한 권리자에게 귀속됩니다.</li>
           <li>이용자가 작성·업로드한 콘텐츠의 권리는 이용자에게 귀속됩니다. 다만, 회사는 서비스 제공·운영·개선·안전 확보를 위해 필요한 범위에서 콘텐츠를 이용·저장·표시할 수 있습니다.</li>
-          <li>AI 카드 생성을 위해 전송된 텍스트 등은 생성 목적 달성 후 서버에 장기 저장하지 않습니다. 자세한 내용은 <a href="privacy.html">개인정보처리방침</a>을 참고하세요.</li>
+          <li>AI 카드 생성을 위해 전송된 텍스트 등은 생성 목적 달성 후 서버에 장기 저장하지 않습니다. 자세한 내용은 <a href="privacy.html" data-i18n-page="privacy">개인정보처리방침</a>을 참고하세요.</li>
           <li>이용자가 공유 템플릿을 게시하는 경우, 다른 이용자가 템플릿을 가져와 사용할 수 있음에 동의한 것으로 봅니다.</li>
         </ol>
 
@@ -217,7 +241,7 @@
         </ol>
 
         <h2>제14조 (개인정보 보호)</h2>
-        <p>회사는 관련 법령에 따라 이용자의 개인정보를 보호하며, 개인정보의 수집·이용·보관 등에 관한 사항은 <a href="privacy.html">개인정보처리방침</a>에 따릅니다.</p>
+        <p>회사는 관련 법령에 따라 이용자의 개인정보를 보호하며, 개인정보의 수집·이용·보관 등에 관한 사항은 <a href="privacy.html" data-i18n-page="privacy">개인정보처리방침</a>에 따릅니다.</p>
 
         <h2>제15조 (준거법 및 분쟁 해결)</h2>
         <ol>
@@ -262,15 +286,15 @@
     <div class="container">
       <div class="footer-inner">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" data-i18n-page="home">
             <span class="logo-icon">✦</span>
             <span class="logo-text">루미오 Lumio</span>
           </a>
           <p>바쁜 하루 속에서도 잊히지 않게, <span class="no-break">짧고 조용한 학습.</span></p>
         </div>
         <ul class="footer-links">
-          <li><a href="terms.html">이용약관</a></li>
-          <li><a href="privacy.html">개인정보처리방침</a></li>
+          <li><a href="terms.html" data-i18n-page="terms">이용약관</a></li>
+          <li><a href="privacy.html" data-i18n-page="privacy">개인정보처리방침</a></li>
           <li><a href="mailto:younghwen@naver.com">younghwen@naver.com</a></li>
         </ul>
       </div>
